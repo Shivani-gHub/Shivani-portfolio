@@ -1,0 +1,44 @@
+/* Home Page Background */ 
+.home-bg { background: url('https://files.oaiusercontent.com/file-GG2v816F2t5RWrMDjbHjDt?se=2025-03-22T08%3A01%3A27Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D919f4b53-ba4f-480b-8ad7-07a10709d6db.webp&sig=/0bQjfF0Q7s9WqgNPX3Aun4KIbzSIpgEJWawb9/p4nc%3D') no-repeat center center fixed; background-size: cover; color: white; font-size: 22px; } 
+
+/* Content Container */ 
+.content-container { text-align: center; margin-top: 100px; font-size: 24px; } 
+
+/* Picture Block Layout */ 
+.picture-blocks { display: flex; justify-content: center; gap: 20px; } 
+.block { width: 250px; text-align: center; border-radius: 10px; overflow: hidden; } 
+.block img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; } 
+.block p { background: rgba(0, 0, 0, 0.6); color: white; padding: 15px; font-size: 22px; } 
+
+/* Login Page - Moving Background */ 
+.login-bg { background: url('https://files.oaiusercontent.com/file-YLK6ekww1Dxhtke9uYXdxX?se=2025-03-22T07%3A34%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D68a954bd-4721-4965-ae90-cada3337841a.webp&sig=F0MI1x0o0ID1Kv7L8YK0kkQBXyLuF619bNX8OFp8jwc%3D'); background-size: 400% 400%; justify-content: center; align-items: center; height: 100vh; } 
+.login-container { background: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 10px; backdrop-filter: blur(10px); text-align: center; font-size: 22px; } 
+
+/* Table Format */ 
+table { margin: auto; border-collapse: separate; border-spacing: 15px; font-size: 20px; } td { padding: 15px; } 
+
+/* Buttons */ 
+button { background-color: #2e8b57; color: white; padding: 15px 25px; border: none; cursor: pointer; border-radius: 5px; font-size: 18px; } 
+
+/* Center Navigation Bar */ 
+.center-nav { display: flex; justify-content: center; background: linear-gradient(to right, #333, #555); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); } 
+
+.center-nav a { color: white; text-decoration: none; margin: 0 25px; font-size: 24px; font-weight: bold; padding: 12px 18px; transition: all 0.3s ease-in-out; border-radius: 5px; } 
+
+.center-nav a:hover { background-color: #ffcc00; color: black; transform: scale(1.1); } 
+
+/* Moving Footer Bar */ 
+.moving-footer { position: fixed; bottom: 0; width: 100%; background-color: black; color: white; padding: 15px 0; text-align: center; font-size: 20px; } 
+
+/* Portfolio Content Styling */ 
+.portfolio-container { background: rgba(0, 0, 0, 0.6); padding: 30px; margin: 50px auto; width: 60%; border-radius: 10px; font-size: 22px; } 
+
+/* Portfolio Page Background */ 
+.portfolio-bg { background-image: url("https://files.oaiusercontent.com/file-Gux5gatCbRzVddin3CbiE1?se=2025-03-22T08%3A04%3A32Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D667db9e0-564b-437c-9018-d3909647a30c.webp&sig=iVjucTb0g90t0M5QMibV2EC0mCn5RZBy/WS6wkkJGzM%3D"); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; color: white; text-align: center; padding-top: 70px; font-size: 24px; } 
+
+/* Social Media Bar */ 
+.social-bar { display: flex; justify-content: center; background-color: #222; padding: 12px 0; } 
+
+.social-bar a { margin: 0 20px; } 
+
+.social-bar img { width: 50px; height: 50px; transition: transform 0.3s; } .social-bar img:hover { transform: scale(1.2); }

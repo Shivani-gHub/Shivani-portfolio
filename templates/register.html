@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body style="background: url('https://files.oaiusercontent.com/file-Xzvs7F6zdFr252fM6NLbmh?se=2025-03-22T07%3A57%3A48Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df4fa67a3-3d1d-4a02-b39d-e5f4765f9740.webp&sig=pCeIxs6yClDz7xBRV9JtuD5M0g3EHoa9OiZx083uysY%3D') ; background-size: cover;">
+
+    <div class="container">
+        <h2>Register</h2>
+        {% if messages %}
+            <div>
+                {% for message in messages %}
+                    <p style="color: red;">{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+        <form method="post">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password1">Password:</label></td>
+                    <td><input type="password" name="password1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password2">Confirm Password:</label></td>
+                    <td><input type="password" name="password2" required></td>
+                </tr>
+            </table>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
+    </div>
+</body>
+</html>
